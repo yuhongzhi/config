@@ -1,0 +1,6 @@
+# for color
+export CLICOLOR=1
+# \h:\W \u\$
+export PS1='\[\033[01;33m\]\u@\h\[\033[01;31m\] \W\$\[\033[00m\] '
+export PATH=/Users/yuhongzhi/Bin:usr/local/Cellar/ctags/5.8/bin:$PATH
+#export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH

@@ -1,0 +1,21 @@
+[user]
+	name = 公琰
+	email = 
+[color]
+    ui = auto
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+[core]
+    editor = vim
+	quotepath = false
+[http]
+    postbuffer = 202428800
+[pack]
+    windowMemory = 1000m
+    SizeLimit = 1000m
+    threads = 1
+[gui]
+    encoding = utf-8
