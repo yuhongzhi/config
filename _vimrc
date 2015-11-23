@@ -19,8 +19,6 @@ source $VIMRUNTIME/menu.vim
 " 设置菜单语言
 set langmenu=zh_cn
 
-
-
 " =========
 " 功能函数
 " =========
@@ -111,7 +109,7 @@ func! MatchingQuotes()
 endf
 
 " 在所有模式下都允许使用鼠标，还可以是n,v,i,c等
-set mouse=a
+set mouse=v
 
 " 恢复上次文件打开位置
 set viminfo='10,\"100,:20,%,n~/.viminfo
@@ -249,7 +247,7 @@ if has('gui_running')
     "colorscheme molokai
     
     "for solarized
-    "set background=light 
+    set background=dark
     colorscheme solarized
     "colorscheme evening
 
@@ -452,13 +450,3 @@ set helplang=cn
 "自动补全
 let g:neocomplcache_enable_at_startup = 1
 "let g:vim_markdown_folding_disabled=1
-
-" Some Linux distributions set filetype in /etc/vimrc.
-" Clear filetype flags before changing runtimepath to force Vim to reload them.
-if exists("g:did_load_filetypes")
-    filetype off
-    filetype plugin indent off
-endif
-set runtimepath+=/usr/local/Cellar/go/1.3.3/libexec/misc/vim
-filetype plugin indent on
-syntax on
